@@ -1,8 +1,8 @@
 FROM node:18.16.0
-WORKDIR /project/remix-practice
+WORKDIR /project/remix-jokes
 
-COPY ./remix-practice/package.json .
-COPY ./remix-practice/package-lock.json .
+COPY ./remix-jokes/package.json .
+COPY ./remix-jokes/package-lock.json .
 RUN npm ci
 
 EXPOSE 3000
